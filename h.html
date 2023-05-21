@@ -1,0 +1,189 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <style>
+    :root {
+        --red: hsl(0, 78%, 62%);
+        --cyan: hsl(180, 62%, 55%);
+        --orange: hsl(34, 97%, 64%);
+        --blue: hsl(212, 86%, 64%);
+        --varyDarkBlue: hsl(234, 12%, 34%);
+        --grayishBlue: hsl(229, 6%, 66%);
+        --veryLightGray: hsl(0, 0%, 98%);
+        --weight1: 200;
+        --weight2: 400;
+        --weight3: 600;
+        height:100vh;
+    }
+    
+    body {
+        font-size: 15px;
+        font-family: 'Poppins', sans-serif;
+        background-color: var(--veryLightGray);
+        height:100vh;
+    }
+    
+    .attribution { 
+        font-size: 11px; text-align: center; 
+    }
+    .attribution a { 
+        color: hsl(228, 45%, 44%); 
+    }
+    
+    h1:first-of-type {
+        font-weight: var(--weight1);
+        color: var(--varyDarkBlue);
+    
+    }
+    
+    h1:last-of-type {
+        color: var(--varyDarkBlue);
+    }
+    
+    @media (max-width: 400px) {
+        h1 {
+            font-size: 1.5rem;
+        }
+    }
+    
+    .header {
+        text-align: center;
+        line-height: 0.8;
+        margin-bottom: 50px;
+        margin-top: 100px;
+    }
+    
+    .header p {
+        margin: 0 auto;
+        line-height: 2;
+        color: var(--grayishBlue);
+    }
+    
+    
+    .box p {
+        color: var(--grayishBlue);
+    }
+    
+    .box {
+        border-radius: 5px;
+        box-shadow: 0px 30px 40px -20px var(--grayishBlue);
+        padding: 30px;
+        margin: 20px;  
+    }
+    
+    img {
+        float: right;
+    }
+    
+    @media (max-width: 450px) {
+        .box {
+            height: 200px;
+        }
+    }
+    
+    @media (max-width: 950px) and (min-width: 450px) {
+        .box {
+            text-align: center;
+            height: 180px;
+        }
+    }
+    
+    .cyan {
+        border-top: 3px solid var(--cyan);
+    }
+    .red {
+        border-top: 3px solid var(--red);
+    }
+    .blue {
+        border-top: 3px solid var(--blue);
+    }
+    .orange {
+        border-top: 3px solid var(--orange);
+    }
+    
+    h2 {
+        color: var(--varyDarkBlue);
+        font-weight: var(--weight3);
+    }
+    
+    
+    @media (min-width: 950px) {
+        .row1-container {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+        
+        .row2-container {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+        .box-down {
+            position: relative;
+            top: 150px;
+        }
+        .box {
+            width: 20%;
+         
+        }
+        .header p {
+            width: 30%;
+        }
+        
+    }
+    .main0{
+        height:100vh;
+        color:white;
+    }
+    span{
+        color:orange;
+    }
+    .text{
+        font-family:'montserrat',sans-serif;
+    }
+    .image{
+        height:70px;
+
+    }
+ 
+</style>
+</head>
+
+<body>
+    <div class="main0">
+  <div class="header">
+    <h1 heightclass="text"><span>S</span>KILLS</h1>
+     <p>the below are the skills in me....</p>
+  </div>
+  <div class="row1-container">
+    <div class="box box-down cyan">
+      <h2>Frameworks</h2>
+      <p>I know springboot,flask and django frame works</p>
+      <img src="https://img.freepik.com/premium-vector/programmer-engineering-development-coding-web-development-website-design-developer-vector_199064-126.jpg?w=740" alt="" class="image">
+    </div>
+
+    <div class="box red">
+      <h2>Cloud computing</h2>
+      <p>Iam good at cloud computing and i also earned a certificate from microsoft</p>
+      <img src="https://cdn.vectorstock.com/i/1000x1000/72/05/cloud-computing-background-with-web-icons-social-vector-2537205.webp" alt="" class="image">
+    </div>
+
+    <div class="box box-down blue">
+      <h2>Programming</h2>
+      <p>Iam good at coding skills and my favourite language is java,also I learnt c++,python</p>
+      <img src="https://assets.codepen.io/2301174/icon-calculator.svg" alt="">
+    </div>
+  </div>
+  <div class="row2-container">
+    <div class="box orange">
+      <h2>Web technologies</h2>
+      <p>I know advanced web technologies like reactjs,nodejs,javascript and html,css</p>
+      <img src="https://cdn.vectorstock.com/i/1000x1000/09/01/futuristic-digital-technologies-concept-vector-34320901.webp" alt="" class="image">
+    </div>
+  </div>
+  </div>
+  </body>
+
+</html>
